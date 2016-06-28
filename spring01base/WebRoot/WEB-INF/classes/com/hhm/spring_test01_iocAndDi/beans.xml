@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+   	
+   	<!-- property中的声明的意思是：在Customer类中有一个order对象，它参照的是Order类的order对象 -->
+	<bean id="customer" class="com.hhm.spring_test01_iocAndDi.Customer">
+		<property name="order" ref="order"></property>
+	</bean>
+	
+	<bean id="order" class="com.hhm.spring_test01_iocAndDi.Order"></bean>
+</beans>

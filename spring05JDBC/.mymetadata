@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="spring05JDBC"
+  id="myeclipse.1459043516939"
+  context-root="/spring05JDBC"
+  j2ee-spec="5.0"
+  archive="spring05JDBC.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

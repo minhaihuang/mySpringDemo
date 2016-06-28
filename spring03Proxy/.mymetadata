@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="spring03Proxy"
+  id="myeclipse.1458830962944"
+  context-root="/spring03staticProxy"
+  j2ee-spec="5.0"
+  archive="spring03Proxy.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

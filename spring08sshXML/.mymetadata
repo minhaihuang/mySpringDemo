@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="spring08sshXML"
+  id="myeclipse.1459083652836"
+  context-root="/spring08sshXMl"
+  j2ee-spec="5.0"
+  archive="spring08sshXML.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+   	<!-- property中的声明的意思是：在User类中有一个room对象，它参照的是Room类的room对象 -->
+   	<bean id="room" class="com.hhm.spring_02_di.Room"></bean>
+	<bean id="user" class="com.hhm.spring_02_di.User">
+		<property name="room" ref="room"></property>
+	</bean>
+</beans>

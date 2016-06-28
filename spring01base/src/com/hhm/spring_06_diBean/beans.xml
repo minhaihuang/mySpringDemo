@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+   	 <!-- 内部注入bean的方式，其他的地方不能再使用，只供user使用
+	 <bean id="user" class="com.hhm.spring_06_diBean.User">
+		<property name="room">
+			<bean class="com.hhm.spring_06_diBean.Room"/>
+		</property>
+	</bean>
+	 -->
+   	
+   	
+   	<!-- 外部注入bean对象 -->
+	<bean id="user" class="com.hhm.spring_06_diBean.User">
+		<property name="room" ref="room"></property>
+		
+		<!-- 实现外部注入属性，包括字段，数组，list，set，map，properties等 -->
+		<property name="name">
+			<value>hhm</value>
+		</property>
+		
+		<property name="age">
+			<value>18</value>
+		</property>
+		
+		<property name="list">
+			<list>
+				<value>listElement1</value>
+			 	<value>listElement2</value>
+				<value>listElement3</value>
+			</list>
+		</property>
+		
+		<property name="strs">
+			<array>
+				<value>arrayElement1</value>
+				<value>arrayElement2</value>
+				<value>arrayElement3</value>
+			</array>
+		</property>
+		
+		<property name="set">
+			<set>
+				<value>setElement1</value>
+				<value>setElement2</value>
+				<value>setElement3</value>
+			</set>
+		</property>
+		
+		<property name="map">
+			<map>
+				<entry key="key1">
+					<value>mapElement1</value>
+				</entry>
+				
+				<entry key="key2">
+					<value>mapElement2</value>
+				</entry>
+				
+				<entry key="key3">
+					<value>mapElement3</value>
+				</entry>
+			</map>
+		</property>
+		
+		<property name="props">
+			<props>
+				<prop key="key01">propElement1</prop>
+				<prop key="key02">propElement2</prop>
+				<prop key="key03">propElement3</prop>
+			</props>
+		</property>
+	</bean>
+	
+	<bean id="room" class="com.hhm.spring_06_diBean.Room"></bean>
+	
+	
+	
+	 
+</beans>

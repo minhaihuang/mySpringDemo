@@ -1,0 +1,5 @@
+练习：
+设计接口和类:IOrderService,OrderServiceImpl
+1.采用三种方式实例化OrderServiceImpl
+2.测试作用范围为singleton和prototype时bean运行情况
+3.加上初始化方法init和销毁方法destroy

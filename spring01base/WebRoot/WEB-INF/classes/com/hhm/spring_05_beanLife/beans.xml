@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+	<bean id="user" class="com.hhm.spring_05_beanLife.User" 
+	 init-method="init" destroy-method="destroy" scope="singleton" ></bean>
+	 
+	 <!-- 当初始化bean的时候，调用init方法，当销毁bean的时候，调用destroy方法。
+			注意：只有当设置scope="singleton"才有效。 -->
+	
+</beans>

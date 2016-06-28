@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="spring09ssh"
+  id="myeclipse.1459090500696"
+  context-root="/spring09ssh"
+  j2ee-spec="5.0"
+  archive="spring09ssh.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

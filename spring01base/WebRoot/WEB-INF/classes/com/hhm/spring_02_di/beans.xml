@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+   	
+   	<!-- property中的声明的意思是：在User类中有一个room对象，它参照的是Room类的room对象 -->
+	<bean id="user" class="com.hhm.spring_02_di.User">
+		<property name="room" ref="room"></property>
+	</bean>
+	
+	<bean id="room" class="com.hhm.spring_02_di.Room"></bean>
+</beans>

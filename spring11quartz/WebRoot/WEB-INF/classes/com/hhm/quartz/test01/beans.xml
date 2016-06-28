@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   
+	<!-- 配置所要执行的任务，通过org.springframework.scheduling.quartz.JobDetailBean -->
+	<bean id="jobDetail" class="org.springframework.scheduling.quartz.JobDetailBean">
+		<property name="jobClass">
+			<value>com.hhm.quartz.test01.MyQuartz</value>
+		</property>
+	</bean>
+	
+	<!-- 定义何时执行，执行的频率等 所用类class="org.springframework.scheduling.quartz.CronTriggerBean" -->
+	<bean id="cronTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail" ref="jobDetail"></property>
+		<!-- 配置cron表达式，何时执行 -->
+		<property name="cronExpression" value="0 * 17 * * ?"></property>
+	</bean>
+	
+	<!--启动任务调度器  class="org.springframework.scheduling.quartz.SchedulerFactoryBean"-->
+	<bean id="scheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean">
+		<property name="triggers">
+			<list>
+				<ref bean="cronTrigger"/>
+			</list>
+		</property>
+	</bean>
+</beans>

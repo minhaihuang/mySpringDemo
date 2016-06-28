@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="spring06TransactionXML"
+  id="myeclipse.1459056168975"
+  context-root="/spring06Transaction"
+  j2ee-spec="5.0"
+  archive="spring06TransactionXML.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+
